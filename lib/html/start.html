@@ -1,0 +1,22 @@
+<h1>BEFORE STARTING</h1>
+<p>
+  Before running the task, we will require you to read, understand and agree with a consent form, read carefully the guidelines describing what you will have to do.<br>
+  <br>
+  Additionally, we need to ask you to <b>run the whole task in fullscreen</b> and <b>focus exclusively on the task</b> you are about to do. This is very important - so please close all "chat" applications, games, etc..<br>
+  <br>
+  At any time before you get your verification code, <b><a style="color:#FF0000">if you leave the fullscreen mode, the task will be cancelled and you'll need to start again!</a></b>. Changing the resolution of your display will have the same unfortunate effect!<br>
+  If you have any technical issue while running the task, please put yourself in contact with neuronoodle@gmail.com and let us know what happened! Don't forget to specify the task you are running (see the title of this website).<br>
+  <br>
+  Before starting with this task you'll need to prove that you're human (that you're not a bot).
+</p>
+
+<!-- "i'm human!" button -->
+<input id="humanButton" type="button" value="I'm human!" onclick="document.getElementById('humanButton').hidden=true; showCaptcha('captchaDiv');" />
+<!-- captcha -->
+<form id="captchaForm" action="javascript:verifyCaptcha();">
+  <div id="captchaDiv"></div>
+  <input type="hidden"/>
+</form>
+<!-- go fullscreen -->
+<br>
+<input id="fullButton" type="submit" value="Go fullscreen and continue" onClick="onFullscreen();goWebsite(html_infosheet);" hidden="true" />
